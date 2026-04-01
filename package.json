@@ -22,7 +22,8 @@
     "build": "tsc && node -e \"require('fs').copyFileSync('src/styles.css', 'dist/styles.css')\"",
     "dev": "tsc --watch",
     "prepublishOnly": "npm run build",
-    "git": "git add . && git commit -m \"chore: update version\" && npm version patch && git push origin main"
+    "git": "git add . && git commit -m \"chore: update version\" && npm version patch && git push origin main",
+    "publish": "npm run git && npm publish --access public"
   },
   "keywords": [
     "mapbox",
