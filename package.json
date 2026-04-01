@@ -1,6 +1,6 @@
 {
   "name": "@nur_djedd/mapbox-component",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "A reusable React MapBox GL component with configurable language, worldview, and style overrides",
   "type": "module",
   "main": "./dist/index.js",
