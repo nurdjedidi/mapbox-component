@@ -1,6 +1,6 @@
 import type { LngLatLike, Map as MapboxMap } from "mapbox-gl";
 import { useEffect, useRef, useState } from "react";
-import type { MapViewBaseProps } from "./types";
+import type { MapViewBaseProps } from "./types.js";
 
 export interface MapViewProps extends MapViewBaseProps {
   /** Optional callback when map is loaded */
