@@ -1,0 +1,56 @@
+{
+  "name": "@nur_djedd/mapbox-component",
+  "version": "1.0.4",
+  "description": "A reusable React MapBox GL component with configurable language, worldview, and style overrides",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./styles.css": "./dist/styles.css"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsc && node -e \"require('fs').copyFileSync('src/styles.css', 'dist/styles.css')\"",
+    "dev": "tsc --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mapbox",
+    "react",
+    "map",
+    "component",
+    "typescript",
+    "palestine",
+    "worldview"
+  ],
+  "author": "Demo Track",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^18.0.0 || ^19.0.0",
+    "react-dom": "^18.0.0 || ^19.0.0",
+    "mapbox-gl": "^3.0.0"
+  },
+  "devDependencies": {
+    "@types/mapbox-gl": "^3.4.1",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "typescript": "^5.9.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/demo-track/mapbox-component.git"
+  },
+  "bugs": {
+    "url": "https://github.com/demo-track/mapbox-component/issues"
+  },
+  "homepage": "https://github.com/demo-track/mapbox-component#readme"
+}
