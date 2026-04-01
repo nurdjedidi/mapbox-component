@@ -21,7 +21,8 @@
   "scripts": {
     "build": "tsc && node -e \"require('fs').copyFileSync('src/styles.css', 'dist/styles.css')\"",
     "dev": "tsc --watch",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build",
+    "git": "git add . && git commit -m \"chore: update version\" && npm version patch && git push origin main"
   },
   "keywords": [
     "mapbox",
@@ -29,10 +30,11 @@
     "map",
     "component",
     "typescript",
+    "morocco",
     "palestine",
     "worldview"
   ],
-  "author": "Demo Track",
+  "author": "Nûr Djedidi",
   "license": "MIT",
   "peerDependencies": {
     "react": "^18.0.0 || ^19.0.0",
@@ -47,10 +49,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/demo-track/mapbox-component.git"
+    "url": "git+https://github.com/nurdjedidi/mapbox-component"
   },
   "bugs": {
-    "url": "https://github.com/demo-track/mapbox-component/issues"
+    "url": "https://github.com/nurdjedidi/mapbox-component/issues"
   },
-  "homepage": "https://github.com/demo-track/mapbox-component#readme"
+  "homepage": "https://github.com/nurdjedidi/mapbox-component#readme"
 }
