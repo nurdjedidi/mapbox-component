@@ -68,9 +68,6 @@ export default function MapView({
         language,
       });
 
-      map.showTileBoundaries = false;
-      map.showCollisionBoxes = false;
-
       mapRef.current = map;
 
       const effectiveOverride = styleOverride ?? {
@@ -104,6 +101,8 @@ export default function MapView({
       }
 
       map.on("load", () => {
+        map.showTileBoundaries = false; 
+  map.showCollisionBoxes = false;
         setMapLoaded(true);
         onMapLoaded?.(map);
       });
